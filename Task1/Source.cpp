@@ -27,12 +27,10 @@ void display(int arr[][41])
     {
         for (unsigned j = 0; j < 41; j++)
         {
-            if (arr[i][j] == 0 && (i != 21 || j != 41))
-                cout << "- ";
-            else if (arr[i][j] == 0 && (i == 21 || j == 41))
+            if (arr[i][j] == 0 )
                 cout << "-";
             else if (arr[i][j] == 1)
-                cout << "+ ";
+                cout << "+";
             else if (arr[i][j] == 2)
                 cout << "0";
         }
